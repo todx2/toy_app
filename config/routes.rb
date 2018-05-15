@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
   
-root 'application#hellox'
+  resources :microposts
+  resources :users
+   #root 'application#hellox'
+   root 'users#index'
 end
